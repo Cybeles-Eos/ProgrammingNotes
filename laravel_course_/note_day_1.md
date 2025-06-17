@@ -1,5 +1,5 @@
 Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=1362s]
-[LearnLaravel] - [22:33]
+[LearnLaravel] - [1:12:18]
             
 # .............................. #
 #      :: Day 1 - Notes ::       #
@@ -154,12 +154,64 @@ Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=1362s]
         |                   Will pass all attribute in specific tag without using props or variable.
 
 
+# @php
+   - By using this blade directive it allows as to write raw PHP code inside a Blade file.
+   ```php
+      @php
+         $name = 'zach';
+      @endphp
+
+      <x-layout name="{{ $name }}">
+   ```
 
 
+# Pass A value in view
+   -  Simply create a second argument, then add [], and inside that, you can pass an array or string. 
+   Just make sure you use a variable name and value like this: view('home', ['name' => 'Dawn Izach'])
+   ```php
+      Route::get('/jobs', function(){ 
+         return view('jobs', [
+            'jobs' => [
+               [
+                  "id" => 1,
+                  "title" => "Manager",
+                  "salary" => "60,000"
+               ]
+               [
+                  "id" => 3,
+                  "title" => "Programmer",
+                  "salary" => "10,000"
+               ]
+               [
+                  "id" => 2,
+                  "title" => "Teacher",
+                  "salary" => "40,000"
+               ]
+            ]
+         ])    
+      })
+   ```
+   ```php job.blade.php
+      <h1>Jobs</h1>
+      <ul>
+         @foreach($jobs as $job)
+            <li>{{$job["title"]}} : {{$job["salary"]}}</li>
+         @endforeach
+      </ul>
+   ```
 
+# Pass A value Specifier in Route then return a specific Page About you specify
+   - By adding curly braces like {id} in the route, you can pass a value through the URL and return a 
+   specific page based on that value. Example: Route::get('/jobs/{id}', function ($id) { ... }).
+   ```php
+      Route::get('/jobs/{id}', function ($id) {
+         dd($id);
+      });
+   ```   
+   - This will return your id dumpdie method.
+   - When you put /jobs/3 in URL address bar you will get the number you put.
 
-
-
+# Arr::first() 
 
 
 
