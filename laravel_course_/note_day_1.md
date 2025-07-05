@@ -212,9 +212,22 @@ Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=1362s]
    - When you put /jobs/3 in URL address bar you will get the number you put.
 
 # Arr::first() 
+   * Arr::first() | Example
+   ```php
+       public function showjobs($id){
+         $jobs = [...];
+         $job = Arr::first($jobs, function($job) use ($id){
+            return $job["id"] == $id;
+         });
 
+         // If you dont want to use use
+         $job = Arr::first($jobs, fn($job) => $job['id'] == $id);
 
-
+      }
+   ```
+   - Return when the condition is true
+   - First will loop all value in array then put it in job 1 by 1 then check the condition and repeat.
+   - The value of job will be based on the result of id and the arrays
 
 
 
