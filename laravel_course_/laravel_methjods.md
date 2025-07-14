@@ -2,6 +2,10 @@
 
 
 
+Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=5200s]
+[LearnLaravel] - [1:26:45]
+
+
 # use Illuminate\Support\Arr;
 | Method                 | Description                                                      |
 | ---------------------- | ---------------------------------------------------------------- |

@@ -1,5 +1,4 @@
-Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=1362s]
-[LearnLaravel] - [1:12:18]
+
             
 # .............................. #
 #      :: Day 1 - Notes ::       #
