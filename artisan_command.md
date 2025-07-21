@@ -108,3 +108,25 @@
    - So by generating the model migration and controller at once you can create functionality to create, read, update and delete records very quickly with a minimum of code
 
 
+# Commands 
+
+   - php artisan tinker
+      [*]: Think of this as command line play ground you can manipulate variables
+      and etc.
+      _Sample_
+      - If you want to create new value in existing table 
+      ```   
+         php artisan tinker 
+
+         > App\Model\Job::create(['title' => 'Crafts man', 'salary' => '$20,000'])
+      ```
+      [note]: make sure you add the title and salary in fillable property at model.
+
+   - php artisan help make:model
+      [*]: This will `show all list of optional` you can add while creating a model
+      :Examples of what will show in list of optional.
+      *-c* : this will make a controller for your model
+      *-m* : This will make a migration for your model
+      *-r* : Automatically generate resource code for your model, migration or controller.
+      *-mcr* : make the 3 optional in 1 line command.
+

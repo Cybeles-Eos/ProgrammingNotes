@@ -2,8 +2,8 @@
 
 
 
-Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=5200s]
-[LearnLaravel] - [1:26:45]
+Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=7220s]
+[LearnLaravel] - [2:02:00]
 
 
 # use Illuminate\Support\Arr;
