@@ -30,6 +30,14 @@
       * fake()->firstName()
       * fake()->lastName()
       * etc...
+   | Faker methods                          |
+   | -------------- | --------------------- |
+   | Job title      | `fake()->jobTitle()`  |
+   | Paragraph text | `fake()->paragraph()` |
+   | Long text      | `fake()->text(200)`   |
+   | Random company | `fake()->company()`   |
+   | Location       | `fake()->city()`      |
+
 
 # state in UserFactory
    - This method is used to change column values to specific values you define.
