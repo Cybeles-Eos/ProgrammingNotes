@@ -1,8 +1,8 @@
 # Laravel Methods
 
 
-Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=8480s]
-[LearnLaravel] - [2:21:20]
+Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=8945s]
+[LearnLaravel] - [2:29:05]
 
 
 # use Illuminate\Support\Arr;
