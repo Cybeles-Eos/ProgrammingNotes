@@ -1,7 +1,7 @@
 # Laravel Methods
 
 
-Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=8945s]
+Reference: [https://www.youtube.com/watch?v=SqTdHCTWqks&t=8946s]
 [LearnLaravel] - [2:29:05]
 
 
